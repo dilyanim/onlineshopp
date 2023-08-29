@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav{
+  color: aliceblue;
+  background: none;
+  font-size: 17px;
+  padding: 0 60px;
+}
+.logo-head {
+  animation: logo-anim 3s ease-in-out infinite;
+}
+@keyframes logo-anim{
+  0%{
+    transform: translateX(0) translateY(0);
+  }
+  25%{
+    transform: translateX(15px) translateY(-5px);
+  }
+  50%{
+    transform: translateX(50px) translateY(5px);
+  }
+  75%{
+    transform: translateX(25px) translateY(-5px);
+  }
+  100%{
+    transform: translateX(0) translateY(0);
+  }
+  
+}
